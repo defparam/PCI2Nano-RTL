@@ -1,0 +1,6 @@
+DATE = "17:42:43 October 12, 2019"
+QUARTUS_VERSION = "16.0.2"
+
+# Revisions
+
+PROJECT_REVISION = "pci2nano"

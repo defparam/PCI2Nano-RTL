@@ -1,0 +1,89 @@
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:/hardware/rtl/pci2nano/nios/ --output-directory=D:/hardware/rtl/pci2nano/nios/nios/synthesis/ --file-set=QUARTUS_SYNTH --report-file=html:D:/hardware/rtl/pci2nano/nios/nios.html --report-file=sopcinfo:D:/hardware/rtl/pci2nano/nios/nios.sopcinfo --report-file=cmp:D:/hardware/rtl/pci2nano/nios/nios.cmp --report-file=qip:D:/hardware/rtl/pci2nano/nios/nios/synthesis/nios.qip --report-file=svd --report-file=regmap:D:/hardware/rtl/pci2nano/nios/nios/synthesis/nios.regmap --report-file=debuginfo:D:/hardware/rtl/pci2nano/nios/nios/synthesis/nios.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE22F17C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=D:/hardware/rtl/pci2nano/nios/nios.qsys --language=VERILOG
+Progress: Loading nios/nios.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding mm_clock_crossing_bridge_0 [altera_avalon_mm_clock_crossing_bridge 13.1]
+Progress: Parameterizing module mm_clock_crossing_bridge_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios: Generating nios "nios" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 4 modules, 11 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 4 modules, 11 connections
+Info: merlin_translator_transform: After transform: 9 modules, 26 connections
+Info: merlin_domain_transform: After transform: 18 modules, 71 connections
+Info: merlin_router_transform: After transform: 23 modules, 86 connections
+Info: merlin_network_to_switch_transform: After transform: 32 modules, 106 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 34 modules, 139 connections
+Info: merlin_hierarchy_transform: After transform: 5 modules, 13 connections
+Info: merlin_mm_transform: After transform: 5 modules, 13 connections
+Info: merlin_interrupt_mapper_transform: After transform: 6 modules, 16 connections
+Info: reset_adaptation_transform: After transform: 8 modules, 22 connections
+Info: nios2_qsys_0: Starting RTL generation for module 'nios_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec D:/hardware/altera/13.1/quartus/bin/eperlcmd.exe -I D:/hardware/altera/13.1/quartus/bin/perl/lib -I D:/hardware/altera/13.1/quartus/sopc_builder/bin/europa -I D:/hardware/altera/13.1/quartus/sopc_builder/bin/perl_lib -I D:/hardware/altera/13.1/quartus/sopc_builder/bin -I D:/hardware/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I D:/hardware/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I D:/hardware/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I D:/hardware/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- D:/hardware/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios_nios2_qsys_0 --dir=C:/PROGRA~1/KMSpico/temp/alt8606_5819839785839881688.dir/0001_nios2_qsys_0_gen/ --quartus_dir=D:/hardware/altera/13.1/quartus --verilog --config=C:/PROGRA~1/KMSpico/temp/alt8606_5819839785839881688.dir/0001_nios2_qsys_0_gen//nios_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0  ]
+Info: nios2_qsys_0: # 2020.12.09 22:29:00 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2020.12.09 22:29:00 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2020.12.09 22:29:01 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2020.12.09 22:29:01 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2_qsys_0: # 2020.12.09 22:29:01 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2020.12.09 22:29:01 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2020.12.09 22:29:02 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2020.12.09 22:29:02 (*)   Creating plain-text RTL
+Info: nios2_qsys_0: # 2020.12.09 22:29:03 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'nios_nios2_qsys_0'
+Info: nios2_qsys_0: "nios" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'nios_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec D:/hardware/altera/13.1/quartus/bin/perl/bin/perl.exe -I D:/hardware/altera/13.1/quartus/bin/perl/lib -I D:/hardware/altera/13.1/quartus/sopc_builder/bin/europa -I D:/hardware/altera/13.1/quartus/sopc_builder/bin/perl_lib -I D:/hardware/altera/13.1/quartus/sopc_builder/bin -I D:/hardware/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/hardware/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/hardware/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_onchip_memory2_0 --dir=C:/PROGRA~1/KMSpico/temp/alt8606_5819839785839881688.dir/0002_onchip_memory2_0_gen/ --quartus_dir=D:/hardware/altera/13.1/quartus --verilog --config=C:/PROGRA~1/KMSpico/temp/alt8606_5819839785839881688.dir/0002_onchip_memory2_0_gen//nios_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'nios_onchip_memory2_0'
+Info: onchip_memory2_0: "nios" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: mm_clock_crossing_bridge_0: "nios" instantiated altera_avalon_mm_clock_crossing_bridge "mm_clock_crossing_bridge_0"
+Info: pipeline_bridge_swap_transform: After transform: 30 modules, 96 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 30 modules, 96 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 30 modules, 96 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 30 modules, 96 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 30 modules, 96 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 30 modules, 96 connections
+Info: mm_interconnect_0: "nios" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_0"
+Info: irq_mapper: "nios" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "nios" instantiated altera_reset_controller "rst_controller"
+Info: nios2_qsys_0_instruction_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_qsys_0_instruction_master_translator"
+Info: nios2_qsys_0_jtag_debug_module_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "nios2_qsys_0_jtag_debug_module_translator"
+Info: nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "mm_interconnect_0" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "mm_interconnect_0" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "mm_interconnect_0" instantiated altera_merlin_router "id_router_002"
+Info: cmd_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_002"
+Info: Reusing file D:/hardware/rtl/pci2nano/nios/nios/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file D:/hardware/rtl/pci2nano/nios/nios/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file D:/hardware/rtl/pci2nano/nios/nios/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: nios: Done "nios" with 23 modules, 39 files, 822826 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

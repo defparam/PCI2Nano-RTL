@@ -1,0 +1,445 @@
+Archive member included because of file (symbol)
+
+d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                              obj/default/hello_world_small.o (memset)
+d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcmp.o)
+                              obj/default/hello_world_small.o (strcmp)
+../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o)
+                              ../pci_uart_test_bsp//obj/HAL/src/crt0.o (alt_load)
+../pci_uart_test_bsp/\libhal_bsp.a(alt_main.o)
+                              ../pci_uart_test_bsp//obj/HAL/src/crt0.o (alt_main)
+../pci_uart_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              ../pci_uart_test_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+../pci_uart_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../pci_uart_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              ../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../pci_uart_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              ../pci_uart_test_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+
+Allocating common symbols
+Common symbol       size              file
+
+buffer              0x100             obj/default/hello_world_small.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x00004000         0x00000020
+onchip_memory2_0 0x00004020         0x00003fe0
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ../pci_uart_test_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/hello_world_small.o
+LOAD d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+LOAD d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/mno-hw-mul\libgcc.a
+START GROUP
+LOAD d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a
+LOAD d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/mno-hw-mul\libgcc.a
+LOAD ../pci_uart_test_bsp/\libhal_bsp.a
+END GROUP
+LOAD d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/mno-hw-mul\libgcc.a
+                0x00004000                __alt_mem_onchip_memory2_0 = 0x4000
+
+.entry          0x00004000       0x20
+ *(.entry)
+ .entry         0x00004000       0x20 ../pci_uart_test_bsp//obj/HAL/src/crt0.o
+                0x00004000                __reset
+                0x0000400c                _exit
+
+.exceptions     0x00004020        0x0
+                0x00004020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x00004020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ *(.exceptions.notirq.label)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ *(.exceptions.exit.label)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ *(.exceptions)
+                0x00004020                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x00004020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x00004020      0x4c8
+                0x00004020                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00004020       0x3c ../pci_uart_test_bsp//obj/HAL/src/crt0.o
+                0x00004020                _start
+ .text          0x0000405c      0x1e8 obj/default/hello_world_small.o
+                0x0000405c                sendbyte
+                0x00004084                sendmsg
+                0x000040c8                recvcmd
+                0x0000418c                banner
+ .text.startup  0x00004244       0xc4 obj/default/hello_world_small.o
+                0x00004244                main
+ .text          0x00004308       0x20 d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                0x00004308                memset
+ .text          0x00004328       0x5c d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcmp.o)
+                0x00004328                strcmp
+ .text          0x00004384      0x104 ../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o)
+                0x00004384                alt_load
+ .text          0x00004488       0x2c ../pci_uart_test_bsp/\libhal_bsp.a(alt_main.o)
+                0x00004488                alt_main
+ .text          0x000044b4       0x24 ../pci_uart_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x000044b4                alt_irq_init
+                0x000044d4                alt_sys_init
+ .text          0x000044d8        0x4 ../pci_uart_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x000044d8                alt_dcache_flush_all
+ .text          0x000044dc        0x4 ../pci_uart_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x000044dc                alt_icache_flush_all
+ .text          0x000044e0        0x8 ../pci_uart_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x000044e0                altera_nios2_qsys_irq_init
+ *(.gnu.warning.*)
+ *(.fini)
+                0x000044e8                PROVIDE (__etext, ABSOLUTE (.))
+                0x000044e8                PROVIDE (_etext, ABSOLUTE (.))
+                0x000044e8                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x000044e8                . = ALIGN (0x4)
+                0x000044e8                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x000044e8                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x000044e8                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x000044e8                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x000044e8                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x000044e8                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                0x000044e8                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x000044e8                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x000044e8                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x000044e8                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x000044e8                . = ALIGN (0x4)
+
+.rodata         0x000044e8      0xc4c
+                0x000044e8                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x000044e8                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x000044e8      0xc4c obj/default/hello_world_small.o
+                                0xc50 (size before relaxing)
+ *(.rodata1)
+                0x00005134                . = ALIGN (0x4)
+                0x00005134                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x000044e8                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x00005134        0x0
+                0x00005134                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x00005134                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00005134        0x0 ../pci_uart_test_bsp//obj/HAL/src/crt0.o
+ .data          0x00005134        0x0 obj/default/hello_world_small.o
+ .data          0x00005134        0x0 d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .data          0x00005134        0x0 d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcmp.o)
+ .data          0x00005134        0x0 ../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x00005134        0x0 ../pci_uart_test_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x00005134        0x0 ../pci_uart_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00005134        0x0 ../pci_uart_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00005134        0x0 ../pci_uart_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x00005134        0x0 ../pci_uart_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x0000d134                _gp = ABSOLUTE ((. + 0x8000))
+                0x0000d134                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x00005134                . = ALIGN (0x4)
+                0x00005134                _edata = ABSOLUTE (.)
+                0x00005134                PROVIDE (edata, ABSOLUTE (.))
+                0x00005134                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x00005134                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x00005134      0x10c
+                0x00005134                __bss_start = ABSOLUTE (.)
+                0x00005134                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x00005134                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x00005134        0xc ../pci_uart_test_bsp/\libhal_bsp.a(alt_main.o)
+                0x00005134                alt_envp
+                0x00005138                alt_argv
+                0x0000513c                alt_argc
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x00005140                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x00005140                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00005140        0x0 ../pci_uart_test_bsp//obj/HAL/src/crt0.o
+ .bss           0x00005140        0x0 obj/default/hello_world_small.o
+ .bss           0x00005140        0x0 d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .bss           0x00005140        0x0 d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcmp.o)
+ .bss           0x00005140        0x0 ../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x00005140        0x0 ../pci_uart_test_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x00005140        0x0 ../pci_uart_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00005140        0x0 ../pci_uart_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x00005140        0x0 ../pci_uart_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x00005140        0x0 ../pci_uart_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ *(COMMON)
+ COMMON         0x00005140      0x100 obj/default/hello_world_small.o
+                0x00005140                buffer
+                0x00005240                . = ALIGN (0x4)
+                0x00005240                __bss_end = ABSOLUTE (.)
+
+.onchip_memory2_0
+                0x00005240        0x0
+                0x00005240                PROVIDE (_alt_partition_onchip_memory2_0_start, ABSOLUTE (.))
+ *(.onchip_memory2_0 .onchip_memory2_0. onchip_memory2_0.*)
+                0x00005240                . = ALIGN (0x4)
+                0x00005240                PROVIDE (_alt_partition_onchip_memory2_0_end, ABSOLUTE (.))
+                0x00005240                _end = ABSOLUTE (.)
+                0x00005240                end = ABSOLUTE (.)
+                0x00005240                __alt_stack_base = ABSOLUTE (.)
+                0x00005240                PROVIDE (_alt_partition_onchip_memory2_0_load_addr, LOADADDR (.onchip_memory2_0))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x23
+ *(.comment)
+ .comment       0x00000000       0x23 obj/default/hello_world_small.o
+                                 0x24 (size before relaxing)
+ .comment       0x00000000       0x24 d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .comment       0x00000000       0x24 d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcmp.o)
+ .comment       0x00000000       0x24 ../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x00000000       0x24 ../pci_uart_test_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x24 ../pci_uart_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x24 ../pci_uart_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x00000000       0x24 ../pci_uart_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x00000000       0x24 ../pci_uart_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x150
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 ../pci_uart_test_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000028       0x28 obj/default/hello_world_small.o
+ .debug_aranges
+                0x00000050       0x20 d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_aranges
+                0x00000070       0x20 d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcmp.o)
+ .debug_aranges
+                0x00000090       0x20 ../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x000000b0       0x20 ../pci_uart_test_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x000000d0       0x20 ../pci_uart_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x000000f0       0x20 ../pci_uart_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000110       0x20 ../pci_uart_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x00000130       0x20 ../pci_uart_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0xc82
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x6d ../pci_uart_test_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000006d      0x423 obj/default/hello_world_small.o
+ .debug_info    0x00000490       0xd9 d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_info    0x00000569       0xbb d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcmp.o)
+ .debug_info    0x00000624      0x1b5 ../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x000007d9      0x1be ../pci_uart_test_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00000997      0x114 ../pci_uart_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00000aab       0x8f ../pci_uart_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00000b3a       0x8f ../pci_uart_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00000bc9       0xb9 ../pci_uart_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_abbrev   0x00000000      0x63a
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x12 ../pci_uart_test_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000012      0x179 obj/default/hello_world_small.o
+ .debug_abbrev  0x0000018b       0x8e d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_abbrev  0x00000219       0x63 d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcmp.o)
+ .debug_abbrev  0x0000027c       0xd6 ../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000352      0x127 ../pci_uart_test_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000479       0xd6 ../pci_uart_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000054f       0x42 ../pci_uart_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00000591       0x42 ../pci_uart_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x000005d3       0x67 ../pci_uart_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_line     0x00000000      0x749
+ *(.debug_line)
+ .debug_line    0x00000000       0x66 ../pci_uart_test_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000066       0xbf obj/default/hello_world_small.o
+ .debug_line    0x00000125      0x17e d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_line    0x000002a3       0xff d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcmp.o)
+ .debug_line    0x000003a2       0xd6 ../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x00000478       0xea ../pci_uart_test_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00000562       0xbf ../pci_uart_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00000621       0x4e ../pci_uart_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x0000066f       0x4e ../pci_uart_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x000006bd       0x8c ../pci_uart_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_frame    0x00000000      0x1b0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x88 obj/default/hello_world_small.o
+ .debug_frame   0x00000088       0x20 d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_frame   0x000000a8       0x20 d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcmp.o)
+ .debug_frame   0x000000c8       0x28 ../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x000000f0       0x28 ../pci_uart_test_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000118       0x38 ../pci_uart_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x00000150       0x20 ../pci_uart_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000170       0x20 ../pci_uart_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x00000190       0x20 ../pci_uart_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+
+.debug_str      0x00000000      0x4c4
+ *(.debug_str)
+ .debug_str     0x00000000       0xa2 obj/default/hello_world_small.o
+                                 0xb9 (size before relaxing)
+ .debug_str     0x000000a2      0x135 d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                                0x18a (size before relaxing)
+ .debug_str     0x000001d7       0x3e d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcmp.o)
+                                0x183 (size before relaxing)
+ .debug_str     0x00000215      0x154 ../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o)
+                                0x1f2 (size before relaxing)
+ .debug_str     0x00000369       0xb0 ../pci_uart_test_bsp/\libhal_bsp.a(alt_main.o)
+                                0x194 (size before relaxing)
+ .debug_str     0x00000419       0x4d ../pci_uart_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                0x167 (size before relaxing)
+ .debug_str     0x00000466       0x1f ../pci_uart_test_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                0x10b (size before relaxing)
+ .debug_str     0x00000485       0x1f ../pci_uart_test_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                0x10b (size before relaxing)
+ .debug_str     0x000004a4       0x20 ../pci_uart_test_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                                0x13b (size before relaxing)
+
+.debug_loc      0x00000000      0x1f0
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xc7 obj/default/hello_world_small.o
+ .debug_loc     0x000000c7       0x6c d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_loc     0x00000133       0x3c d:/hardware/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strcmp.o)
+ .debug_loc     0x0000016f       0x20 ../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x0000018f       0x20 ../pci_uart_test_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x000001af       0x41 ../pci_uart_test_bsp/\libhal_bsp.a(alt_sys_init.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x10 ../pci_uart_test_bsp//obj/HAL/src/crt0.o
+                0x00008000                __alt_data_end = 0x8000
+                0x00008000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x00005240                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x00005240                PROVIDE (__alt_heap_start, end)
+                0x00008000                PROVIDE (__alt_heap_limit, 0x8000)
+OUTPUT(pci_uart_test.elf elf32-littlenios2)
+
+.debug_ranges   0x00000000       0x98
+ .debug_ranges  0x00000000       0x20 ../pci_uart_test_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x00000020       0x30 obj/default/hello_world_small.o
+ .debug_ranges  0x00000050       0x48 ../pci_uart_test_bsp/\libhal_bsp.a(alt_load.o)
