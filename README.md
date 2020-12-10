@@ -1,6 +1,12 @@
 # PCI2Nano-RTL - "Make PCI cool again!"
 
+<img src="https://github.com/defparam/PCI2Nano-PCB/raw/main/images/banner.png" width="600">
+
 Welcome to the PCI2Nano-RTL repo. In this repo you'll find a bunch of design files which target the PCI2Nano Reference Platform found here: https://github.com/defparam/PCI2Nano-PCB. These design files come with a verilog implementation of a PCI core, a 8250-Compatible PCI-based UART core and Nios II example design driving the UART.
+
+# Demo
+![Alt Text](https://github.com/defparam/PCI2Nano-PCB/raw/main/images/pci2nano.gif)
+
 
 # What is this?
 This is a turnkey set of open source design files and reference information for anyone to be able to start tinkering with PCI/PCIe on low end FPGAs. If you have a desire to interface to a host which supports PCIe and would like a quick way to design PCI functions which interface to the host, this project may be for you!
@@ -24,5 +30,7 @@ To get our feet wet with PCI and the PCI core in general, I have implemented a P
 
 # Enjoy!
 Have fun tinkering with PCI. I'm happy to take any pull requests and suggestions.
+
 Best,
+
 Evan
