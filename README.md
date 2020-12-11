@@ -20,6 +20,10 @@ With Gen4/5/6 of PCIe in the works the PCIe protocol is becoming more complex, d
 # Where to start?
 Go over to the reference platform repo: https://github.com/defparam/PCI2Nano-PCB and build out your own reference platform. Come back to this repo and using the free version of Quartus 13.1 compile this design as is. Or simply open the programmer and load in the bitstream SOF file found in this repo directly to your DE0-Nano.
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/defparam/PCI2Nano/main/images/image6.jpg" width="550">
+</p>
+
 # Technical Information
 ## PCI Core
 The PCI Core is not a finished design. It currently supports downstream memory writes/reads, downstream configuration writes/read and downstream IO writes and reads. The PCI core still requires upstream memory writes/reads to be added and also various fixes and tweaks. This functionality will be added in the future
