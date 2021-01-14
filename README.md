@@ -1,4 +1,4 @@
-# PCI2Nano-RTL - "Make PCI cool again!"
+# PCI2Nano-RTL - "Old school PCI is back!"
 
 <p align="center">
 <img src="https://github.com/defparam/PCI2Nano-PCB/raw/main/images/banner.png" width="800" >
